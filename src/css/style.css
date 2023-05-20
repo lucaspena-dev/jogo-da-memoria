@@ -4,12 +4,12 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 2px solid #fff;
     height: 100vh;
-    font-family: 'Nunito', sans-serif;
     display: flex;
+    font-family: 'Nunito', sans-serif;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 }
 
 /* Configuração de estilização da main (conteúdo principal da página). */
@@ -154,31 +154,39 @@ main {
 
 @media screen and (max-width: 768px) {
 
-    main {
+    body {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
+        height: max-content;
+        padding: none;
+    }
+
+    main {
+        border: 2px solid #fff;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 0.9em 0.9em 0.9em 0.9em;
         gap: 25px;
     }
 
     #logos {
-        width: 100%;
         flex-direction: column;
+        width: 100%;
         gap: 30px;
     }
 
     #logo-mario {
-        width: 250px;
+        width: 300px;
         height: 150px;
     }
 
     #logos p {
-        font-style: normal;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 22px;
         line-height: 26px;
-        text-align: center;
         width: 200px;
     }
 
@@ -190,7 +198,14 @@ main {
 
     .login_form {
         flex-direction: column;
-        font-size: 22px;
         width: 100%;
+    }
+
+    #label {
+        font-size: 22px;
+    }
+
+    .login_button {
+        font-size: 32px;
     }
 }
