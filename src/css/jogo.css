@@ -219,7 +219,7 @@ main {
         align-items: center;
         width: 100%;
         height: fit-content;
-        margin: 0 10px 3px 10px
+        margin: 0 10px 0.8em 10px
     }
 
     .grid {
