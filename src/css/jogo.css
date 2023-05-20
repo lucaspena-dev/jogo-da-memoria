@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0 60px;
+    margin: 0 0 30px 0;
 }
 
 /* Configuração do div onde vai está as informações do nick do jogador, round e tempo. */
@@ -63,17 +63,24 @@ header button:hover {
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
 /* Configuração de estilização do div .grid onde vai está posicionada as cartas do jogo */
 .grid {
    background-color: rgba(249, 242, 27, 0.6);
    border: 3px solid yellow;
    display: grid;
-   grid-template-columns: repeat(8, 1fr);
+   grid-template-columns: repeat(8, 5.6em);
    gap: 20px;
    justify-content: center;
    width: 100%;
-   max-width: 800px;
-   margin: auto auto; 
+   max-width: 900px;
+   height: fit-content; 
    padding: 15px;
    border-radius: 10px;
    perspective: 1000px;
@@ -203,15 +210,23 @@ header button:hover {
     }
 
     section {
-        margin-top: 15px;
+        margin-top: 15px
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        margin: 0 10px 3px 10px
     }
 
     .grid {
         grid-template-columns: repeat(4, 3.3em);
         width: fit-content;
         height: fit-content;
-        gap: 0.7em;
-        padding: 0.8em 0.8em 0.8em 0.8em;
-        margin: 0 2.5em 1.2em 2.5em; 
+        gap: 10px;
+        padding: 0.7em 0.7em 0.7em 0.7em;
      }
 }
