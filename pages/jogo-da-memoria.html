@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/jogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script defer src="../src/js/script.js"></script>
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <header>
+
+        <!-- Div resonsável pelas informações da partida. -->
+        <div>
+            <p>Jogador: <span class="player"></span></p>
+            <p>Round: <span id="round">01</span></p>
+            <p>Tempo: <span class="watch">00:00:00</span></p>
+        </div>
+        <button id="close" onclick="closeButton()">Encerrar</button>
+    </header>
+    <section>
+        <main>
+
+            <!-- Div onde será gerada as cartas do jogo. -->
+            <div class="grid">
+            </div>
+        </main>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script defer src="src/js/login.js"></script>
+    <title>Início - Jogo da Memória</title>
+</head>
+<body>
+    <main>
+
+        <!-- Section onde vai está o logo e o texto explicativo. -->
+        <section id="logos">
+            <img id="logo-mario" src="./src/media/img/logo-mario-memory.png" alt="Logo Mário Memory">
+            <p>Encontre todos os pares no menor tempo possível acumulando pontos 
+               a cada rodada.</p>
+        </section>
+
+        <!-- Section onde vai está o formulário -->
+        <section id="jogar">
+
+            <!-- Formulário onde o jogador vai digitar o seu nickname e dar ínicio a partida. -->
+            <form class="login_form">
+                <label id="label" for="input">Entre com seu nickname!</label>
+                <input id="input" type="text" maxlength="14" placeholder="Ex.: Starkiller">
+                <button disabled class="login_button" id="play" type="submit" onclick="playButton()">Jogar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Configuração gerais do body da página. */
+body {
+    background-image: url(../media/img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Configuração de estilização da main (conteúdo principal da página). */
+main {
+    background-color: rgba(244, 244, 244, 0.5);
+    border-radius: 10px;
+    padding: 75px;
+    display: flex;
+    gap: 150px;
+}
+
+/* Configuração de estilização da section #logos. */
+#logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Configuração do tamanho da imagem-logo da section #logos. */
+#logo-mario {
+    width: 400px;
+    height: 185px;
+}
+
+/* Configuração de estilização do parágrafo da section #logos. */
+#logos p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    width: 375px;
+}
+/* Configuração de estilização da section #jogar. */
+#jogar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configuração de estilização do formulário. */
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Configuração de estilização da fonte no label. */
+#label {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+/* Configuração de estilização do input. */
+#input {
+    border: 3px solid #049CD8;
+    border-radius: 8px;
+    max-width: 250px;
+    width: 100%;
+    height: 25px;
+    font-weight: 700;
+    font-size: 26px;
+    outline: none;
+    color: #049CD8;
+    text-align: center;
+    padding: 12px;
+    -webkit-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54); 
+}
+
+#input:hover {
+    background-color: rgba(244, 244, 244, 0.5);
+}
+
+/* Configuração de estilização do botão Jogar */
+.login_button {
+    background-color: #0e3742;
+    border: 3px solid #049;
+    border-radius: 8px;
+    color: snow;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 280px;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    animation: textanimated 5s linear infinite;
+}
+
+/* Animação do texto piscando no botão. */
+@keyframes textanimated {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% 
+    {
+        color: #fff;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4,
+        0 0 320px #03bcf4;      
+    }
+}
+
+/* Configuração do hover do botão Jogar */
+.login_button:hover {
+    box-shadow: 0 0 5px #049,
+    0 0 25px #049,
+    0 0 50px #049;
+    cursor: pointer;
+}
+
+/* Botão desabilitado. */
+.login_button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+    border: none;
+    -webkit-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    animation: none;
+}

@@ -1,0 +1,158 @@
+/* Configuração gerais do body da página. */
+body {
+    background-image: url(../media/img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    min-width: 100vh;
+    box-sizing: border-box;
+}
+
+/* Configuração de estilização do header (cabeçalho). */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 60px;
+}
+
+/* Configuração do div onde vai está as informações do nick do jogador, round e tempo. */
+header div {
+    background-image: url(../media/img/Pipe.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    max-width: 685px;
+    width: 100%;
+    height: 150px;
+    font-weight: 900;
+    font-size: 20px;
+    color: navy;
+    
+}
+/* Configuração da margem do parágrafo.  */
+header div p {
+    margin-left: 15px;
+    margin-right: 8px;
+}
+/* Configuração de estilização do botão Encerrar. */
+header button {
+    background-color: #E52521;
+    border: 3px solid #F4F4F4;
+    border-radius: 10px;
+    width: 200px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 80px;
+    -webkit-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.54);
+}
+
+/* Configuração de estilização do hover do botão Encerrar */
+header button:hover {
+    box-shadow: 0 0 5px #E52521,
+    0 0 25px #E52521, 0 0 50px #E52521;
+    color: white;
+    border: 3px solid red;
+    cursor: pointer;
+}
+
+/* Configuração de estilização do div .grid onde vai está posicionada as cartas do jogo */
+.grid {
+   background-color: rgba(249, 242, 27, 0.6);
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   gap: 20px;
+   justify-content: center;
+   width: 100%;
+   max-width: 800px;
+   margin: auto auto; 
+   padding: 15px;
+   border-radius: 10px;
+   perspective: 1000px;
+}
+
+/* Configuração geral da carta */
+.card {
+    aspect-ratio: 1/1;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    transition: all 450ms ease;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    background-color: lightgrey;
+    -webkit-box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 8px 8px 2px rgba(0,0,0,0.54);
+    box-shadow: 0px 3.9px 8px 2px rgba(0,0,0,0.54);
+}
+
+/* Configuração da face da carta */
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 400ms ease;
+}
+
+/* Configuração da frente da carta */
+.front {
+    transform: rotateY(180deg);
+}
+
+/* Configuração da parte detrás da carta */
+.back {
+    background-image: url(../media/img/QuestionBlock1.png);
+    border: 2px solid gold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Configuração do hover com animação colorida */
+.back:hover {
+    box-shadow: 0 0 5px yellow,
+    0 0 25px yellow, 0 0 50px yellowgreen,
+    0 0 100px #14ffe9, 0 0 150px #ffeb3b,
+    0 0 200px #ff00e0;
+    animation: animated 1.5s linear infinite;
+}
+
+/* Configuração da animação */
+@keyframes animated {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Configuração da animação de virada da carta */
+.reveal-card {
+    background-color: gold;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 5px yellow,
+    0 0 25px yellow, 0 0 50px yellow;
+}
+
+/* Configuração de estilização do carta de quando o jogador encontrou um par */
+.disabled-card {
+    opacity: 0.5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px darkgreen,
+    0 0 25px darkgreen, 0 0 50px darkgreen,
+    0 0 100px darkgreen;
+
+}
