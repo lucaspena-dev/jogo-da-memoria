@@ -34,7 +34,7 @@ let seconds = 0;
 
 // Função para acessar a página inicial.
  function closeButton() {
-  bclose = window.location.assign("../index.html");
+    window.location.assign("../index.html");
  }
 
 // Função que adicionar um zero na frente para os contadores.

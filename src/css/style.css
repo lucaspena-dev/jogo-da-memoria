@@ -151,13 +151,68 @@ main {
     animation: none;
 }
 
-/* Configuração de tela para mobile */
+/* Configuração de tela na horizontal para mobile */
+@media screen and (max-height: 400px) {
+    body {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    main {
+        border: 2px solid #fff;
+        width: 90%;
+        height: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 1em 0.9em 1em 0.9em;
+        gap: 25px;
+    }
+
+    #logos {
+        width: 100%;
+        height: 100%;
+        gap: 25px;
+    }
+
+    #logo-mario {
+        width: 320px;
+        height: 140px;
+    }
+
+    #logos p {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 26px;
+        width: 300px;
+    }
+
+    #jogar {
+        width: 100%;
+        
+    }
+
+    .login_form {
+        width: 100%;
+        gap: 18px;
+    }
+
+    #label {
+        font-size: 22px;
+    }
+
+    .login_button {
+        font-size: 32px;
+    }
+}
+
+/* Configuração de tela na vertical para mobile */
 @media screen and (max-width: 768px) {
 
     body {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         justify-content: center;
     }
 
@@ -165,7 +220,9 @@ main {
         border: 2px solid #fff;
         flex-direction: column;
         width: fit-content;
-        height: fit-content;
+        height: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
         padding: 1em 0.9em 1em 0.9em;
         gap: 25px;
     }

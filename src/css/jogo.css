@@ -166,17 +166,80 @@ main {
 
 }
 
-/* Configuração de tela para mobile */
+/* Configuração de tela na horizontal para mobile */
+@media screen and (max-height: 400px) {
+    body {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 100%;
+        margin: -75px 0 0px 0;
+    }
+
+    header div {
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 230px;
+        letter-spacing: 1.5px;
+    }
+
+    header div p {
+        width: 100%;
+        max-width: 200px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 16.5px;
+        line-height: 20px;
+    }
+
+    header button {
+        margin-left: 15px;
+        height: 48px;
+    }
+
+    section {
+        margin-top: -60px
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(8, 49px);
+        width: 100%;
+        max-width: 540px;
+        height: 100%;
+        gap: 10px 15px;
+        padding: 0.8em 0.1em 0.8em 0.1em;
+        perspective: 400px;
+     }
+}
+
+/* Configuração de tela na vertical para mobile */
 @media screen and (max-width: 768px) {
 
     body {
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 100%;
         height: 100%;
         padding: 0;
         margin: 0;
-        justify-content: center;
-        align-items: center;
     }
 
     header {
@@ -195,11 +258,12 @@ main {
     }
 
     header div p {
-        width: fit-content;
+        width: 100%;
+        max-width: 200px;
         align-items: center;
         justify-content: center;
         font-weight: 900;
-        font-size: 18px;
+        font-size: 16.5px;
         line-height: 20px;
     }
 
@@ -227,5 +291,6 @@ main {
         max-width: 330px;
         height: 100%;
         gap: 10px 22px;
+        perspective: 400px;
      }
 }
