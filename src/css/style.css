@@ -4,7 +4,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 2px solid #fff;
     height: 100vh;
     display: flex;
     font-family: 'Nunito', sans-serif;
@@ -15,6 +14,7 @@ body {
 /* Configuração de estilização da main (conteúdo principal da página). */
 main {
     background-color: rgba(244, 244, 244, 0.5);
+    border: 2px solid #fff;
     border-radius: 10px;
     padding: 75px;
     display: flex;
@@ -151,14 +151,13 @@ main {
     animation: none;
 }
 
-
+/* Configuração de tela para mobile */
 @media screen and (max-width: 768px) {
 
     body {
         flex-direction: column;
         width: 100%;
-        height: max-content;
-        padding: none;
+        height: fit-content;
     }
 
     main {

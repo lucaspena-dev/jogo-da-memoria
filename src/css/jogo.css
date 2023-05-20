@@ -5,9 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Nunito', sans-serif;
-    min-height: 100vh;
-    min-width: 100vh;
-    box-sizing: border-box;
+    height: 100vh;
 }
 
 /* Configuração de estilização do header (cabeçalho). */
@@ -29,6 +27,7 @@ header div {
     height: 150px;
     font-weight: 900;
     font-size: 20px;
+    letter-spacing: 1.5px;
     color: navy;
     
 }
@@ -46,6 +45,7 @@ header button {
     height: 52px;
     font-weight: 400;
     font-size: 36px;
+    letter-spacing: 1.5px;
     text-align: center;
     color: #FFFFFF;
     margin-right: 80px;
@@ -66,6 +66,7 @@ header button:hover {
 /* Configuração de estilização do div .grid onde vai está posicionada as cartas do jogo */
 .grid {
    background-color: rgba(249, 242, 27, 0.6);
+   border: 3px solid yellow;
    display: grid;
    grid-template-columns: repeat(8, 1fr);
    gap: 20px;
@@ -156,4 +157,62 @@ header button:hover {
     0 0 25px darkgreen, 0 0 50px darkgreen,
     0 0 100px darkgreen;
 
+}
+
+/* Configuração de tela para mobile */
+@media screen and (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: -60px 0 0px 0;
+    }
+
+    header div {
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 230px;
+        letter-spacing: 1.5px;
+    }
+
+    header div p {
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    header button {
+        margin-top: -68px;
+        margin-bottom: 10px;
+        margin-left: 80px;
+        height: 50px;
+    }
+
+    section {
+        margin-top: 15px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 3.3em);
+        width: fit-content;
+        height: fit-content;
+        gap: 0.7em;
+        padding: 1em 1em 1em 1em;
+        margin: 0 2.5em 0 2.5em; 
+     }
 }
