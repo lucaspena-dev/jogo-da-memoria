@@ -226,7 +226,6 @@ main {
         height: 100%;
         gap: 10px 15px;
         padding: 0.8em 0.1em 0.8em 0.1em;
-        perspective: none;
      }
 }
 
@@ -290,6 +289,5 @@ main {
         max-width: 330px;
         height: 100%;
         gap: 10px 22px;
-        perspective: none;
      }
 }
