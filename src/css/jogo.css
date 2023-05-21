@@ -226,7 +226,17 @@ main {
         height: 100%;
         gap: 10px 15px;
         padding: 0.8em 0.1em 0.8em 0.1em;
+        animation: animated 1.5s linear infinite;
      }
+     
+     @keyframes animated {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    }
 }
 
 /* Configuração de tela na vertical para mobile */
@@ -289,5 +299,16 @@ main {
         max-width: 330px;
         height: 100%;
         gap: 10px 22px;
+        animation: animated 1.5s linear infinite;
      }
+    
+    @keyframes animated {
+
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    }
 }
