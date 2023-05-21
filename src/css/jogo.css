@@ -33,8 +33,8 @@ header div {
 }
 /* Configuração da margem do parágrafo.  */
 header div p {
-    margin-left: 10px;
-    margin-right: 8px;
+    margin-left: 4px;
+    margin-right: 10px;
 }
 /* Configuração de estilização do botão Encerrar. */
 header button {
