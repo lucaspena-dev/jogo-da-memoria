@@ -203,12 +203,12 @@ main {
     }
 
     header button {
-        margin-left: 10px;
+        margin-left: 25px;
         height: 48px;
     }
 
     section {
-        margin-top: -60px
+        margin-top: -63px
     }
 
     main {
@@ -226,7 +226,7 @@ main {
         height: 100%;
         gap: 10px 15px;
         padding: 0.8em 0.1em 0.8em 0.1em;
-        perspective: 300px;
+        perspective: 200px;
      }
 }
 
@@ -290,6 +290,6 @@ main {
         max-width: 330px;
         height: 100%;
         gap: 10px 22px;
-        perspective: 300px;
+        perspective: 200px;
      }
 }
