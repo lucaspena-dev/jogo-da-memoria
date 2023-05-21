@@ -33,7 +33,7 @@ header div {
 }
 /* Configuração da margem do parágrafo.  */
 header div p {
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 8px;
 }
 /* Configuração de estilização do botão Encerrar. */
@@ -187,7 +187,7 @@ main {
         background-position: center;
         background-size: contain;
         width: 100%;
-        max-width: 480px;
+        max-width: 510px;
         height: 230px;
         letter-spacing: 1.5px;
     }
